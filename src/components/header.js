@@ -21,7 +21,7 @@ const Header = () => {
       </h1>
       <nav>
         <ul className={headerStyles.navList}>
-          <li>
+          {/* <li>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
@@ -29,7 +29,7 @@ const Header = () => {
             >
               Home{" "}
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               className={headerStyles.navItem}
