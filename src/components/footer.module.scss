@@ -11,12 +11,13 @@ $light-grey: #6b6e70;
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   justify-content: center;
-  justify-items: stretch;
+  justify-items: center;
 
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: none;
   }
 }
 

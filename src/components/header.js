@@ -20,7 +20,7 @@ const Header = () => {
         </Link>
       </h1> */}
       <nav className={headerStyles.container}>
-        <img src="../img/logo-1564880603016.png" class="logo" />
+        <img src={`../../logo.png`} className={headerStyles.logo} />
         <ul className={headerStyles.navList}>
           <li>
             <Link

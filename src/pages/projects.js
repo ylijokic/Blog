@@ -18,7 +18,7 @@ const Projects = () => {
           </p>
           <div className={projectStyles.item}>
             <a href="#!">
-              <img src="img/projects/project3.jpg" alt="Project" srcset="" />
+              <img src={`../../project1.jpg`} alt="Project" srcset="" />
             </a>
             <a
               href="https://portland-park-finder.herokuapp.com/"
@@ -45,7 +45,7 @@ const Projects = () => {
           </p>
           <div className={projectStyles.item}>
             <a href="#!">
-              <img src="img/projects/project1.jpg" alt="Project" srcset="" />
+              <img src={`../../project3.jpg`} alt="Project" srcset="" />
             </a>
             <a href="#!" className={projectStyles.btnLight}>
               <i class="fa fa-eye"></i> Project
@@ -68,10 +68,10 @@ const Projects = () => {
           </p>
           <div className={projectStyles.item}>
             <a href="#!">
-              <img src="img/projects/project2.jpg" alt="Project" srcset="" />
+              <img src={`../../project2.jpg`} alt=" " srcset="" />
             </a>
             <a href="#!" className={projectStyles.btnLight}>
-              <i class="fa fa-eye"></i> Project
+              <i class="fa fa-eye"></i> View Project
             </a>
             <a
               href="https://github.com/ylijokic/Battle-Game"
