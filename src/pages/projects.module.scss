@@ -1,0 +1,80 @@
+$primary-color: #222629;
+$secondary-color: #86c232;
+$dark-green: #61892f;
+$light-grey: #6b6e70;
+
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  // grid-template-columns: 1fr;
+  grid-template-areas:
+    "project1 project1 project1"
+    "project2 project2 project2"
+    "project3 project3 project3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+.project {
+  position: relative;
+  background: rgba($light-grey, 0.5);
+  margin: 2rem 0;
+  padding: 0.5rem;
+  border-bottom: $dark-green 5px solid;
+  border-radius: 7px;
+}
+p {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.item {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 0.5fr;
+  justify-content: center;
+  margin: 8px;
+  padding-top: 2rem;
+  position: inherit;
+  //bottom: 0;
+  // left: 25%;
+  // right: 25%;
+}
+
+.project-1 {
+  grid-area: project1;
+}
+
+.project-2 {
+  grid-area: project2;
+}
+
+.project-3 {
+  grid-area: project3;
+}
+
+//Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 2rem;
+  border: 0;
+  margin: 0.3rem;
+  min-height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    background: $dark-green;
+    color: set-text-color($dark-green);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: $primary-color;
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: $light-grey;
+  color: #fff;
+}

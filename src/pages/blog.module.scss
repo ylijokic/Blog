@@ -1,3 +1,8 @@
+$primary-color: #222629;
+$secondary-color: #86c232;
+$dark-green: #61892f;
+$light-grey: #6b6e70;
+
 .posts {
   list-style-type: none;
   margin: 0;
@@ -7,15 +12,16 @@
   margin: 1rem 0;
 
   a {
-    background: #f4f4f4;
-    color: #000000;
+    background: rgba(#fff, 0.6);
+    color: $primary-color;
     display: block;
     padding: 1rem;
     text-decoration: none;
+    border-radius: 7px;
   }
 
   a:hover {
-    background: #e4e4e4;
+    background: $light-grey;
   }
 
   h2 {
@@ -23,7 +29,7 @@
   }
 
   p {
-    color: #777777;
+    color: $primary-color;
     font-size: 0.8rem;
     font-style: italic;
   }
