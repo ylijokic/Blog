@@ -14,22 +14,14 @@ const Header = () => {
   `)
   return (
     <header className={headerStyles.header}>
-      <h1>
+      {/* <h1>
         <Link className={headerStyles.title} to="/">
           {data.site.siteMetadata.title}
         </Link>
-      </h1>
-      <nav>
+      </h1> */}
+      <nav className={headerStyles.container}>
+        <img src="../img/logo-1564880603016.png" class="logo" />
         <ul className={headerStyles.navList}>
-          {/* <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/"
-            >
-              Home{" "}
-            </Link>
-          </li> */}
           <li>
             <Link
               className={headerStyles.navItem}
@@ -43,9 +35,9 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/contact"
+              to="blog"
             >
-              Contact{" "}
+              Blog{" "}
             </Link>
           </li>
           <li>
@@ -61,9 +53,9 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="blog"
+              to="/contact"
             >
-              Blog{" "}
+              Contact{" "}
             </Link>
           </li>
         </ul>

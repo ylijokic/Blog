@@ -1,3 +1,33 @@
+$primary-color: #222629;
+$secondary-color: #86c232;
+$dark-green: #61892f;
+$light-grey: #6b6e70;
+
 .footer {
   margin-top: 3rem;
+  background-color: $primary-color;
+  height: 60px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: stretch;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.icons {
+  a {
+    text-decoration: none;
+    color: $light-grey;
+    padding: 0.4rem;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
 }
