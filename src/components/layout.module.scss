@@ -7,7 +7,6 @@ $light-grey: #6b6e70;
   margin: 0 auto;
   max-width: 800px;
   padding: 1rem;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -15,4 +14,9 @@ $light-grey: #6b6e70;
 
 .content {
   flex-grow: 1;
+  background-color: lighten($primary-color, $amount: 5%);
+  padding: inherit;
+  border-radius: 7px;
+  box-shadow: 0.5px 0.5px 2px rgba(#fff, 0.6);
+  color: darken(#ffffff, 20%);
 }
