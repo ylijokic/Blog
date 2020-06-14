@@ -3,6 +3,7 @@ $primary-color: #222629;
 $secondary-color: #86c232;
 $dark-green: #61892f;
 $light-grey: #6b6e70;
+$home-image: url("../../static/john-towner-89PFnHKg8HE-unsplash.jpg");
 
 html {
   font-family: sans-serif;
@@ -13,12 +14,16 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $primary-color;
+  background: $home-image;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba($primary-color, 1);
   color: $light-grey;
   height: 100%;
   line-height: 1.5;
   font-size: 1.2rem;
 }
+
 article,
 aside,
 details,
@@ -53,6 +58,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  color: #fff;
 }
 a:active,
 a:hover {

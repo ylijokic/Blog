@@ -5,7 +5,7 @@ $light-grey: #6b6e70;
 
 .footer {
   margin-top: 3rem;
-  background-color: $primary-color;
+  //background-color: $primary-color;
   height: 60px;
 }
 
@@ -16,6 +16,7 @@ $light-grey: #6b6e70;
   justify-items: center;
 
   p {
+    color: darken(#ffffff, 20%);
     font-size: 0.9rem;
     padding: none;
   }
@@ -24,7 +25,7 @@ $light-grey: #6b6e70;
 .icons {
   a {
     text-decoration: none;
-    color: $light-grey;
+    color: darken(#ffffff, 20%);
     padding: 0.4rem;
 
     &:hover {

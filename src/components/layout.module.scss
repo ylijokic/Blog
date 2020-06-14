@@ -14,9 +14,25 @@ $light-grey: #6b6e70;
 
 .content {
   flex-grow: 1;
-  background-color: lighten($primary-color, $amount: 5%);
+  background-color: lighten($primary-color, $amount: 3%);
   padding: inherit;
   border-radius: 7px;
-  box-shadow: 0.5px 0.5px 2px rgba(#fff, 0.6);
+  box-shadow: 0.5px 0.5px 4px rgba(#fff, 0.6);
   color: darken(#ffffff, 20%);
+  opacity: 0.8;
+}
+
+.picture_div {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+.picture {
+  max-width: 400px;
+  max-height: 400px;
 }
