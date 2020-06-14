@@ -1,11 +1,11 @@
 ---
-title: "The Great Gatsby Bootcamp"
+title: "Learning Gatsby"
 date: "2019-12-21"
 ---
 
 `I am learning how to use Gatsby!`
 
-![Grass](./grass.png)
+![The Great Gatsby](./Gatsby.jpg)
 
 ## Topics Covered
 
