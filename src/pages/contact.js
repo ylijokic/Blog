@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import contactStyles from "./contact.module.scss"
+import Head from "../components/head"
 
 const ContactPage = () => {
   return (
     <Layout>
+      <Head title={"Contact Me"} />
       <h1>Contact Me</h1>
       <div className={contactStyles.formMain}>
         <div className={contactStyles.formDiv}>

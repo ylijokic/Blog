@@ -12,17 +12,18 @@ $light-grey: #6b6e70;
   margin: 1rem 0;
 
   a {
-    background: rgba(#fff, 0.4);
-    color: $primary-color;
+    background: rgba(#fff, 0.1);
+    color: darken(#ffffff, 20%);
     display: block;
     padding: 1rem;
     text-decoration: none;
     border-radius: 7px;
-    border: 1.5px solid $dark-green;
+    border: 1.5px solid rgba(#fff, 0.2);
   }
 
   a:hover {
     background: $light-grey;
+    border: 1.5px solid $dark-green;
   }
 
   h2 {
@@ -30,7 +31,7 @@ $light-grey: #6b6e70;
   }
 
   p {
-    color: $primary-color;
+    color: darken(#ffffff, 20%);
     font-size: 0.8rem;
     font-style: italic;
   }

@@ -1,11 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
+import layoutStlyes from "../components/layout.module.scss"
+import Head from "../components/head"
 
 const AboutPage = () => {
   return (
     <Layout>
-      <h1>Hello</h1>
-      <p>I'm Charlie and this is my website!</p>
+      <Head title={"About Me"} />
+      <div className={layoutStlyes.picture_div}>
+        <img src={`../../unnamed.jpg`} className={layoutStlyes.picture} />
+        <h1>Hello</h1>
+        <p>My name is Charlie.</p>
+      </div>
       <p>
         I am a Computer Science student at Oregon State University.
         <br />

@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import headerStyles from "../components/header.module.scss"
 import { FaBackward } from "react-icons/fa"
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 export const query = graphql`
   query($slug: String) {
@@ -19,14 +20,14 @@ export const query = graphql`
 const Blog = props => {
   return (
     <Layout>
+      <Head title={props.data.markdownRemark.frontmatter.title} />
       <p>
         <Link
-            className={headerStyles.navItem}
-            activeClassName={headerStyles.activeNavItem}
-            to="/blog"
+          className={headerStyles.navItem}
+          activeClassName={headerStyles.activeNavItem}
+          to="/blog"
         >
-        <FaBackward size={15}/>
-        {" "} Back to Blog{" "}
+          <FaBackward size={15} /> Back to Blog{" "}
         </Link>
       </p>
       <h1>{props.data.markdownRemark.frontmatter.title}</h1>
