@@ -10,7 +10,12 @@ const ContactPage = () => {
       <h1>Contact Me</h1>
       <div className={contactStyles.formMain}>
         <div className={contactStyles.formDiv}>
-          <form className={contactStyles.montform} id="reused_form">
+          <form
+            className={contactStyles.montform}
+            id="reused_form"
+            method="POST"
+            data-netlify="true"
+          >
             <p className={contactStyles.name}>
               <input
                 name="name"
@@ -35,13 +40,18 @@ const ContactPage = () => {
               <textarea
                 name="message"
                 className={contactStyles.feedbackInput}
-                id="comment"
+                id="message"
                 placeholder="Message"
               ></textarea>
             </p>
-            <button href="#!" className={contactStyles.btnDark}>
-              <i class="fa fa-paper-plane"></i> Submit
-            </button>
+            <div>
+              <div data-netlify-recaptcha></div>
+            </div>
+            <input
+              type="submit"
+              value="Send Message"
+              className={contactStyles.btnDark}
+            />
           </form>
         </div>
       </div>
