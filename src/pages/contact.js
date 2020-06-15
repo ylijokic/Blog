@@ -11,6 +11,53 @@ const ContactPage = () => {
       <div className={contactStyles.formMain}>
         <div className={contactStyles.formDiv}>
           <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            className={contactStyles.montform}
+          >
+            <p className={contactStyles.name}>
+              <label>
+                {" "}
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  className={contactStyles.feedbackInput}
+                />
+              </label>
+            </p>
+            <p className={contactStyles.email}>
+              <label>
+                {" "}
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  className={contactStyles.feedbackInput}
+                />
+              </label>
+            </p>
+            <p className={contactStyles.text}>
+              <label>
+                {" "}
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  className={contactStyles.feedbackInput}
+                ></textarea>
+              </label>
+            </p>
+            <div>
+              <div data-netlify-recaptcha></div>
+            </div>
+            <p>
+              <button className={contactStyles.btnDark} type="submit">
+                Send
+              </button>
+            </p>
+          </form>
+          {/* <form
             className={contactStyles.montform}
             id="reused_form"
             method="POST"
@@ -52,7 +99,7 @@ const ContactPage = () => {
               value="Send Message"
               className={contactStyles.btnDark}
             />
-          </form>
+          </form> */}
         </div>
       </div>
     </Layout>
