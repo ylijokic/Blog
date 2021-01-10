@@ -11,6 +11,14 @@ $light-grey: #6b6e70;
   display: grid;
   grid-template-areas: "form";
   grid-template-columns: 1fr;
+  flex-grow: 1;
+  background-color: lighten($primary-color, $amount: 3%);
+  padding: inherit;
+  border-radius: 7px;
+  box-shadow: 0.5px 0.5px 4px rgba(#fff, 0.6);
+  color: darken(#ffffff, 20%);
+  opacity: 0.8;
+  padding: 1rem;
 
   // justify-content: center;
 

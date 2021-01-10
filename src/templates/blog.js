@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import headerStyles from "../components/header.module.scss"
+import layoutStlyes from "../components/layout.module.scss"
 import { FaBackward } from "react-icons/fa"
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -20,6 +21,7 @@ export const query = graphql`
 const Blog = props => {
   return (
     <Layout>
+      <div className={layoutStlyes.content}>
       <Head title={props.data.markdownRemark.frontmatter.title} />
       <p>
         <Link
@@ -35,6 +37,7 @@ const Blog = props => {
       <div
         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
       ></div>
+      </div>
     </Layout>
   )
 }

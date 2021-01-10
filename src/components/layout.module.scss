@@ -20,18 +20,38 @@ $light-grey: #6b6e70;
   box-shadow: 0.5px 0.5px 4px rgba(#fff, 0.6);
   color: darken(#ffffff, 20%);
   opacity: 0.8;
+  padding: 1rem;
 }
 
 .picture_div {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   justify-items: center;
   align-content: center;
   align-items: center;
   position: relative;
+  flex-grow: 1;
+  background-color: lighten($primary-color, $amount: 3%);
+  padding: inherit;
+  border-radius: 7px;
+  box-shadow: 0.5px 0.5px 4px rgba(#fff, 0.6);
+  color: darken(#ffffff, 20%);
+  opacity: 0.8;
+  padding: 1rem;
 }
+
+.text {
+  display: flex;
+  flex-flow: column;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .picture {
   max-width: 400px;
   max-height: 400px;
