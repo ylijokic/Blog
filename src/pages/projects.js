@@ -10,6 +10,55 @@ const Projects = () => {
     <Layout>
       <Head title={"My Projects"} />
         <div className={layoutStlyes.content}>
+          <div className={(projectStyles.project, projectStyles.project3)}>
+            <h2>CSV File Parser</h2>
+            <h4>C Programming</h4>
+            <p>
+              This program reads data related to movies from a CSV file and stores the information
+              into a Linked List of Movie struct objects. 
+              <br/>
+              <br/>
+              Users can choice from a menu of options to select what CSV file they would like to parse. Once a
+              CSV file is selected, the program makes a new directory and creates one text file for every unique release 
+              year. The text files are named based on the year (ex. 2020.txt) and contains a list of  all the movies released that year.
+            </p>
+            <div className={projectStyles.item}>
+              <img src={`../../CSV_Parser_Walkthrough.gif`} alt="Project" srcset="" />
+              <a
+                href="https://github.com/ylijokic/CSV_Parser"
+                className={projectStyles.btnDark}
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div className={layoutStlyes.content}>
+          <div className={(projectStyles.project, projectStyles.project3)}>
+            <h2>Small Shell Terminal</h2>
+            <h4>C Programming ~~ Linux</h4>
+            <p>
+              This program is a a small version of a shell terminal. The program has three built-in Shell
+              commands: change directory, get status, and exit. All other commands are run by forking the parent
+              process and calling the execvp function. 
+              <br/>
+              <br/>
+              Users are able to run most all commands that are common to a typical linux shell such as bash & zsh.
+            </p>
+            <div className={projectStyles.item}>
+              <img src={`../../Shell_Terminal_Walkthrough.gif`} alt="Project" srcset="" />
+              <a
+                href="https://github.com/ylijokic/Small_Shell_Terminal"
+                className={projectStyles.btnDark}
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project1)}>
             <h2>Foodie Finds:</h2>
             <h2> Recipe Search Web Application</h2>
@@ -19,8 +68,10 @@ const Projects = () => {
               recipes! The user can filter recipes based on meal type or they can
               filter based on key words. We utilized the Spoonacular web api to
               make endpoint requests and retrieve the recipe data. The application
-              is built using JavaScript, React.js Library, Node.js, and Sass. This
-              project was part of a group effort during a
+              is built using JavaScript, React.js Library, Node.js, and Sass. 
+              <br/>
+              <br/>
+              This project was part of a group effort during a
               <a href="https://www.chingu.io/"> Chingu</a> collaborative coding
               session. Have a look at the application and the code repository!
             </p>
@@ -49,10 +100,9 @@ const Projects = () => {
             <h4>Python ~~ Django ~~ JavaScript ~~ AWS ~~ Bootstrap</h4>
             <p>
               The OneHitWonder application is a Django based web-app that enables
-              both Musicians looking for work and Venue owners looking for
-              Musicians to connect with one another via skill level specific
-              advertisement. Employers can post experience targeted advertisements
-              to Musicians that match the employers desired criteria. All data
+              both musicians looking for work and venue owners looking for
+              Musicians to connect with one another. Employers can post experience targeted advertisements
+              to musicians that match the employers desired criteria. All data
               interactions and storage of the web application is done using the
               AWS relational database.
             </p>
