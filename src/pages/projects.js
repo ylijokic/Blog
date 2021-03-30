@@ -11,6 +11,30 @@ const Projects = () => {
       <Head title={"My Projects"} />
         <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project3)}>
+            <h2>Flixster Android App</h2>
+            <h4>Java ~~ Android Studio ~~ JSON</h4>
+            <p>
+              This mobile android application allows users to browse movies from the The Movie Database API.
+              <br/>
+              <br/>
+              Users can view a list of newly released movies which includes details related to the movie description,
+              movie poster, and movie rating. By clicking on the movie detail the application brings the user to a new page
+              where an embedded YouTube clip can be played. Check out the ReadMe on the GitHub link for more information!
+            </p>
+            <div className={projectStyles.item}>
+              <img src={`../../Flixster_Walkthrough_Portrait(3).gif`} alt="Project" srcset=""/>
+              <a
+                href="https://github.com/ylijokic/Flixster"
+                className={projectStyles.btnDark}
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div className={layoutStlyes.content}>
+          <div className={(projectStyles.project, projectStyles.project3)}>
             <h2>CSV File Parser</h2>
             <h4>C Programming</h4>
             <p>
