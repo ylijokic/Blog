@@ -10,6 +10,37 @@ const Projects = () => {
     <Layout>
       <Head title={"My Projects"} />
         <div className={layoutStlyes.content}>
+          <div className={(projectStyles.project, projectStyles.project1)}>
+            <h2> NASA Natural Disaster Map</h2>
+            <h4>Javascript ~~ Node.js ~~ React.js ~~ Google Maps API</h4>
+            <p>
+              This web application utilizes data from the NASA Open API, as well as 
+              the Google Maps API, to display a map of current fires and volcanoes. The
+              user is able to click on icons to display more detailed information related
+              to the natural disaster. This web application also utilizes the Material Design
+              library to display modern React components. Have a look at the website to view
+              the application, or take a look at the GitHub repository for source code. 
+              <br/>
+            </p>
+            <div className={projectStyles.item}>
+              <img src={`../../NasaDisaster.png`} alt="Project" srcset="" />
+              <a
+                href="https://hopeful-liskov-9bb720.netlify.app/"
+                className={projectStyles.btnLight}
+              >
+                <i class="fa fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/ylijokic/nasa_disaster_map"
+                className={projectStyles.btnDark}
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project3)}>
             <h2>Flixster Android App</h2>
             <h4>Java ~~ Android Studio ~~ JSON</h4>
@@ -117,7 +148,7 @@ const Projects = () => {
           </div>
         </div>
         <br/>
-        <div className={layoutStlyes.content}>
+        {/* <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project2)}>
             <h2>One Hit Wonder: </h2>
             <h2>Musician Matching Social Application</h2>
@@ -148,7 +179,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <br/>
+        <br/> */}
         <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project3)}>
             <h2>Portland Park Finder</h2>
