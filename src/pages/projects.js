@@ -42,6 +42,30 @@ const Projects = () => {
         <br/>
         <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project3)}>
+            <h2>Simple Tweet Android App</h2>
+            <h4>Java ~~ Android Studio ~~ Twitter API</h4>
+            <p>
+              This mobile android application is a mock Twitter app that utilizes the Twitter API to show actual tweets from the user's timeline.
+              <br/>
+              <br/>
+              Users can log into their Twitter account using OAuth login. Then they have the ability to view actual tweets that they have either posted, or someone they are following has posted.
+              There is also the ability to compose a live tweet and post to your timeline. In addition, pull to refresh and infinite scrolling features have been implemented to give SimpleTweet users a true Twitter mobile experience.
+              Check out the ReadMe on the GitHub link for more information!
+            </p>
+            <div className={projectStyles.item}>
+              <img src={`../../Twitter_Walkthrough_Portrait(3).gif`} alt="Project" srcset=""/>
+              <a
+                href="https://github.com/ylijokic/SimpleTweet"
+                className={projectStyles.btnDark}
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div className={layoutStlyes.content}>
+          <div className={(projectStyles.project, projectStyles.project3)}>
             <h2>Flixster Android App</h2>
             <h4>Java ~~ Android Studio ~~ JSON</h4>
             <p>
