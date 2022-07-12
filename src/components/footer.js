@@ -28,7 +28,7 @@ const Footer = () => {
             <FaGithubSquare size={30} />
           </a>
         </div>
-        <p>Created by {data.site.siteMetadata.author}, © 2021</p>
+        <p>Created by {data.site.siteMetadata.author}, © 2022</p>
       </div>
     </footer>
   )

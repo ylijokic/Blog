@@ -17,19 +17,19 @@ const AboutPage = () => {
       <br/>
       <div className={layoutStlyes.content}>
         <p>
-          I am a Computer Science student at Oregon State University and I am
-          interested in Full Stack Web Development, Mobile Development, and Data Science.
+          I studied Computer Science at Oregon State University and 
+          I am most interested in Full Stack Web Development and Mobile Development.
           <br />
           <br />
-          I love Computer Science because it is a field of study that has
-          endless learning opportunities. It's amazing to be able to learn new
-          technologies and apply my personal interests to create unique
-          applications. I am also inspired to learn how big data and cloud services
-          can help drive innovation. 
+          I love Software Engineering because there are endless learning opportunities. 
+          It's amazing to be able to learn a new
+          technology and apply that knowledge to create a unique
+          application. I also really enjoy the colloborative nature of working on 
+          a software development team.
           <br />
           <br />
           Take a look at some of my projects, my github page and my
-          blog posts. Connect with me on LinkedIn or reach out if you think I would be a good 
+          blog posts. Also, connect with me on LinkedIn or reach out if you think I would be a good 
           fit for your team. Thank you for visiting my website!
         </p>
       </div>

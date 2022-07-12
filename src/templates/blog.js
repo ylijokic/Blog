@@ -32,8 +32,8 @@ const Blog = props => {
           <FaBackward size={15} /> Back to Blog{" "}
         </Link>
       </p>
-      <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-      <p>{props.data.markdownRemark.frontmatter.date}</p>
+      {/* <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+      <p>{props.data.markdownRemark.frontmatter.date}</p> */}
       <div
         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
       ></div>
