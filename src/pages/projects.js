@@ -11,6 +11,35 @@ const Projects = () => {
       <Head title={"My Projects"} />
         <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project3)}>
+            <h2>NHL Team Dashboard</h2>
+            <h4>TypeScript ~~ Next.js ~~ React</h4>
+            <p>
+              This web application allows users to view information related to all 32 NHL teams, as well as the NHL players currently on the teams' rosters.
+              <br/>
+              <br/>
+              Users can view information related to all NHL teams and the active roster of those teams. They also have the ability to search by team name and player name.
+              This application was built with the Next.js framework and pulls JSON data from a public sports API. 
+              Check out the ReadMe on the GitHub link for more information!
+            </p>
+            <div className={projectStyles.item}>
+              <img src={`../../NHL_DashBoard_Walkthrough.gif`} alt="Project" srcset=""/>
+              <a
+                href="https://nhl-team-dashboard.vercel.app/"
+                className={projectStyles.btnLight}
+              >
+                <i class="fa fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/ylijokic/NHL-Team-DashBoard"
+                className={projectStyles.btnDark}
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className={layoutStlyes.content}>
+          <div className={(projectStyles.project, projectStyles.project3)}>
             <h2>Simple Tweet Android App</h2>
             <h4>Java ~~ Android Studio ~~ Twitter API</h4>
             <p>

@@ -24,7 +24,7 @@ const AboutPage = () => {
           I love Software Engineering because there are endless learning opportunities. 
           It's amazing to be able to learn a new
           technology and apply that knowledge to create a unique
-          application. I also really enjoy the colloborative nature of working on 
+          application. I also really enjoy the collaborative nature of working on 
           a software development team.
           <br />
           <br />
