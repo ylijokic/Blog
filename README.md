@@ -1,6 +1,6 @@
 `This is the source code for my website and associated Blog!`
 
-[Check out the deployed website here!](http://charlieylijoki.me/)
+[Check out the deployed website here!](http://charlieylijoki.com/)
 
 ## Some of the technologies I have experience with:
 

@@ -11,6 +11,64 @@ const Projects = () => {
       <Head title={"My Projects"} />
         <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project3)}>
+            <h2>React Full Stack Donut Shop</h2>
+            <h4>JavaScript ~~ React ~~ AWS Lambda ~~ AWS DynamoDB</h4>
+            <p>
+              This Full Stack web application allows users to view current Donut Shop inventory, star their favorite donuts, as well as create new donuts and edit/delete exising donuts.
+              <br/>
+              <br/>
+              The data is stored on an AWS DynamoDB table and is hosted on AWS Amplify. This project utilizes JavaScript/Node.js and React, as well as AWS Lambda functions.
+              Follow up additions would be to incorporate TypeScript and introduce routing to this single page application.
+            </p>
+            <div className={projectStyles.item}>
+              <img src={`../../React_Donut_Shop.gif`} alt="Project" srcset=""/>
+              <a
+                href="https://main.d2nc7yni5nz4s.amplifyapp.com/"
+                className={projectStyles.btnLight}
+              >
+                <i class="fa fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/ylijokic/React-Donut-Shop"
+                className={projectStyles.btnDark}
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div className={layoutStlyes.content}>
+          <div className={(projectStyles.project, projectStyles.project3)}>
+            <h2>Angular Donut Shop</h2>
+            <h4>TypeScript ~~ Angular ~~ JSON Server</h4>
+            <p>
+              This Frontend web application allows users to view a list of Donuts, as well as create new donuts and edit/delete exising donuts.
+              <br/>
+              <br/>
+              The data is stored on a JSON Server that is deployed on Vercel. This project utilizes TypeScript and Angular and is also hosted on Vercel.
+              Follow up additions would be to add a fully developed backend API and Database support.
+            </p>
+            <div className={projectStyles.item}>
+              <img src={`../../Angular_Donut_Shop.gif`} alt="Project" srcset=""/>
+              <a
+                href="https://angular-basics-plum.vercel.app/admin/donuts"
+                className={projectStyles.btnLight}
+              >
+                <i class="fa fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/ylijokic/Angular_Basics"
+                className={projectStyles.btnDark}
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div className={layoutStlyes.content}>
+          <div className={(projectStyles.project, projectStyles.project3)}>
             <h2>NHL Team Dashboard</h2>
             <h4>TypeScript ~~ Next.js ~~ React</h4>
             <p>
@@ -38,6 +96,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        <br/>
         <div className={layoutStlyes.content}>
           <div className={(projectStyles.project, projectStyles.project3)}>
             <h2>Simple Tweet Android App</h2>
